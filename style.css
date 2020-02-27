@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('https://drive.google.com/uc?id=101JiV8hog6to_MGhhepxdzLe5TKwLrEF');
+    background-position:center;
+    background-size: cover;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+li,
+h1,
+label {
+    font-size: 32px;
+}
+
+button {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background: #5f6caf;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* NAVIGATION SECTION */
+
+header {
+    text-align: center;
+}
+
+header h1,
+ul {
+    padding-top: 20px;
+}
+
+header h1 {
+    color: #5f6caf;
+}
+
+header li {
+    color: #ccc;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    padding: 20px;
+}
+
+
+/* CARDS SECTION */
+
+.iraq-cards,
+.turkey-cards {
+    min-height: 80vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.turkey-cards {
+    display: none;
+}
+
+.iraq-card,
+.turkey-card {
+    min-height: 60vh;
+    box-shadow: 2px 2px 17px 0px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    flex-basis: 30rem;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.iraq-card h1,
+.turkey-card h1 {
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+.iraq-card h3,
+.turkey-card h3 {
+    font-size: 20px;
+    color: #5f6caf;
+    padding-top: 20px;
+}
+
+.card_list {
+    width: 100%;
+    text-align: center;
+}
+
+.card_list ul {
+    margin: 32px 32px;
+}
+
+.card_list li {
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    list-style: none;
+    padding: 16px;
+    font-size: 16px;
+    color: black;
+}
+
+
+/* CREATING THE TOGGLE SWITCH 
+
+Don't change anything in this section */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #757be4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
